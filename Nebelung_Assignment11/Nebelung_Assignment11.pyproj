@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="apiPackage\api.py">
+    <Compile Include="apiPackage\apiclient.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="apiPackage\__init__.py">
@@ -42,6 +42,10 @@
     <Folder Include="apiPackage\" />
     <Folder Include="datacleanerPackage\" />
     <Folder Include="mainPackage\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\fuel_data.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
