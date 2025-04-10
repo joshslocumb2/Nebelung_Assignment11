@@ -21,12 +21,26 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="apiPackage\api.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="apiPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="datacleanerPackage\datacleaner.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="datacleanerPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="mainPackage\main.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="apiPackage\" />
+    <Folder Include="datacleanerPackage\" />
     <Folder Include="mainPackage\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
